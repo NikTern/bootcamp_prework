@@ -22,6 +22,7 @@
           <li>The body element represents the visible content shown to the user.</li>
           <li>Sections can be estbalished with: section</li>
           <li>Classes can be established with: section class="classname" id="idname"</li>
+          <pre style="font-size:9px;"> </pre>
         </ul>
       </section>
       
@@ -31,6 +32,51 @@
           <li>'touch style.css' to create style css file in current directory via command prompt</li>
           <li>Link a CSS text file to the html file by putting in the head: "link rel="stylesheet" href="./assets/style.css"</li>
           <li>The class elements defined in html can be modified with CSS by typing: .'classname' { \property: value \ property: value \} </li>
+          
+          <pre style="font-size:9px;"> </pre>
+          <p style="font-size:20px;">There are three ways to style a webpage using CSS: </p> 
+          
+          <h4>Inline CSS</h4>
+          <li>When a developer wants to style an element directly in the HTML file</li>
+          <li>Inline styles apply to a specific HTML tag, using a style attribute with a CSS rule to style a particular page element only</li>
+          <li>Useful for quick and permanent changes but are less flexible than external and internal style sheets, because each inline style must be edited individually whenever you make a design change.</li>
+          <img src="./assets/inlinecss.png" alt="Inline CSS." style="width:630px;height:50px;"/>
+          <p style="font-size:16px;">E.g. using the style attribute to change the colour of a single heading</p>
+          
+          <pre style="font-size:9px;"> </pre>
+          <h4>Internal CSS Stylesheet</h4>
+          <li>It is also possible to embed an entire stylesheet directly in the HTML file using a >style< element in the >head< element.</li>
+          <li>The internal style sheet contains CSS rules for the webpage in the head section of the HTML file. </li>
+          <li>The rules only apply to that page, and you can configure CSS classes and IDs, which are used to identify elements, to style multiple elements in the page code. </li>
+          <img src="./assets/internalcss.png" alt="Internal CSS." style="width:630px;height:140px;"/>
+          <p style="font-size:16px;">E.g. using the style attribute to change the colour of a single heading</p>
+          
+          <pre style="font-size:9px;"> </pre>        
+          <h4>External CSS Stylesheet</h4>
+          <li>Allows developers to keep all their CSS rules in a separate file, which makes design changes easier.</li>
+          <li>When using an external style sheet, we link the file using a >link< element placed in the HTML's >head<, as shown in the following code:</li>
+          <pre style="font-size:9px;"> </pre>
+          <img src="./assets/externalcss.png" alt="External CSS." style="width:630px;height:70px;"/>
+          <pre style="font-size:9px;"> </pre>
+          <li>A selector defines the element or attributes to which the rules, or declarations, will apply:</li>
+          <pre style="font-size:9px;"> </pre>
+          <img src="./assets/selectorcss.png" alt="Selector." style="width:630px;height:280px;"/>
+          <p style="font-size:16px;">Declarations contain two important components: the CSS property we want to apply and the value of the property.</p>
+          <pre style="font-size:9px;"> </pre>          
+          <li>The 'padding' property adds space around the content inside an element. When you increase padding, you are actually making the entire element bigger! That is because the padding, while transparent, is located inside the element, whereas the margin is the transparent buffer outside an element.</li>
+          <pre style="font-size:9px;"> </pre>
+          <li>Every HTML element is essentially a box. Each box consists of margins outside the element, and the element's borders, padding, and content. This is sometimes referred to as the CSS box model</li>
+          <img src="./assets/paddingcss.png" alt="Padding." style="width:430px;height:250px;"/>
+          <pre style="font-size:9px;"> </pre>
+          <li>Sometimes, we want to apply a rule to all the elements visible on the page. To do that, we use a special wild card symbol, or: *</li>
+          <img src="./assets/asteriskcss.png" alt="Asterisk." style="width:550px;height:100px;"/>
+          <li>Class inheritance:</li>
+          <img src="./assets/classcss.png" alt="Class Inheritance Example." style="width:550px;height:300px;"/>   
+          <pre style="font-size:6px;"> </pre>
+          <li>The box-shadow CSS property adds shadow effects around an element's frame. You can set multiple effects separated by commas. A box shadow is described by X and Y offsets relative to the element, blur and spread radius, and color.</li> 
+          <pre style="font-size:9px;"> </pre>
+          <li>In our example, the X offset is 5px and defines the width or extent of the shadow on the X axis (or to the right of the box); the Y offset is 10px and defines the extent on the Y axis (or just below the box). We haven’t defined the blur or spread radius here</li>       
+          <pre style="font-size:9px;"> </pre>
         </ul>
       </section>
       
@@ -44,6 +90,7 @@
           <li>go on github and create pull request. Make sure the base branch is main and the comparison branch is feature/add-html</li>
           <li>once merged, type into gitbash: 'git checkout main' to swap back to the main branch.</li>
           <li>Then pull the remote main branch into the local main branch by entering: 'git pull origin main'</li>
+          <pre style="font-size:9px;"> </pre>
         </ul>
       </section>
 
@@ -53,16 +100,27 @@
           <li>'touch script.js to create new js file'</li>
           <li>variable assignment (includes semicolon): var variablename = "string"/[arrayitem1, arrayitem2];</li>
           <li>console log to output a message to the web console (inspect element), useful for testing code: console.log(topics);</li>
-          <li>unlike linking CSS, link the js file at the bottom of the html document between '/footer' and '/body'</li>
-          <li>to link the JS file, use: >script< src="./assets/script.js">/script<</li>
+          <pre style="font-size:10px;"> </pre>
+          <li>Javascript and HTML reads top to bottom, so put Javascript at bottom of HTML doc and define variables in order</li>
+          <li>Therefore, unlike linking CSS, link the js file at the bottom of the html document between '/footer' and '/body'</li>
+          <li>To link the JS file, use: >script< src="./assets/script.js">/script<</li>
+          <li>The >script< tag is used to embed a client-side script (JavaScript) into a html document</li>
+          <li>The >script< element either contains scripting statements, or it points to an external script file through the src attribute.</li>
+          <li>This does the same job as the <link> element for CSS. It applies the JavaScript to the page, so it can have an effect on the HTML (along with the CSS, and anything else on the page).</li>
+          <pre style="font-size:10px;"> </pre>
           <li>If statements: <img src="./assets/if-statement.png" alt="If statement screenshot." style="width:550px;height:115px;margin-left:0;"/></li>
+          <pre style="font-size:10px;"> </pre>
           <li>A value is considered falsy if it is one of the following values: 0, -0, On, "", null, undefined, NaN, or a Boolean data type with the value of false. All other values, including a Boolean with the value of true, are considered truthy</li>
+          <pre style="font-size:10px;"> </pre>
           <li>Threequals ‘===’ is STRICTLY EQUALS</li>
           <li>Javascript is zero-indexed, so the first item in an array is item 0</li>
+
           <li>select list item using: arrayname[index];     - e.g: cats[1] will return array item 2</li>
           <li>To comment out multiple lines of JavaScript code, put /* before and */ after the block of code</li>
           <li>The code to be executed is written inside the curly brackets {} - this applies to if statements, for loops, functions</li>
-          <li>Defining functions (don't forget parentheses!): function HelloWorld() { / code block / }</li>
+          <li>When defining and calling functions (don't forget parentheses!): function HelloWorld() { / code block / }</li>
+          <li>See the Javascript of this document for more!</li>
+          <pre style="font-size:9px;"> </pre>
         </ul>
       </section>
 
