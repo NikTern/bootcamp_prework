@@ -12,7 +12,7 @@ N/A
 
 This study guide is divided into four sections: HTML, CSS, Git and Javascript. Each section contains the pieces of information which I felt were most important to remember as foundations of each topic. Two Javascript functions automatically execute upon opening the page, which display (in the console) the topic list and a suggestion of what to study first.
 
-![Screenshot of console and website](./assets/images/consolescreenshot.png)
+![Screenshot of console and website](./assets/consolescreenshot.png)
 
 ## License
 
